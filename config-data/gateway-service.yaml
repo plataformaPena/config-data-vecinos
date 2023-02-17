@@ -37,3 +37,23 @@ spring:
           uri: lb://vecinos-service
           predicates:
             - Path=/neighbour/**
+        - id: participants
+          uri: lb://participants
+          predicates:
+            - Path=/participants/**,/history/**
+        - id: prequalifiers
+          uri: lb://prequalifiers
+          predicates:
+            - Path=/prequalifiers/**
+        - id: qualification-stages
+          uri: lb://qualification-stages
+          predicates:
+            - Path=/qualificationStages/**,/prequalifications/**,/firstEvaluation/**,/secondEvaluation/**
+        - id: qualifications
+          uri: lb://qualifications
+          predicates:
+            - Path=/qualifications/**,/appeals/**,/firstEvaluation/**,/ratifications/**
+        - id: qualification-process
+          uri: lb://qualification-process
+          predicates:
+            - Path=/qualifyingBoard/**,/process/**,/sessions/**        
