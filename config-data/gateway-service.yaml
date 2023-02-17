@@ -56,4 +56,12 @@ spring:
         - id: qualification-process
           uri: lb://qualification-process
           predicates:
-            - Path=/qualifyingBoard/**,/process/**,/sessions/**        
+            - Path=/qualifyingBoard/**,/process/**,/sessions/**
+        - id: officers
+          uri: lb://officers
+          predicates:
+            - Path=/officers/**
+        - id: becas-service
+          uri: lb://becas-service
+          predicates:
+            - Path=/scholarships/**,/scholarshipsManagement/**,/scholarshipsPeriod/**,/scholarshipsType/**,/scholarshipsApplications/**
