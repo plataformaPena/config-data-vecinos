@@ -65,3 +65,7 @@ spring:
           uri: lb://becas-service
           predicates:
             - Path=/scholarships/**,/scholarshipsManagement/**,/scholarshipsPeriod/**,/scholarshipsType/**,/scholarshipsApplications/**
+        - id: entities-municipal
+          uri: lb://entities-municipal
+          predicates:
+            - Path=/municipal-management/**,/unity-management/**
