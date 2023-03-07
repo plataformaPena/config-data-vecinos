@@ -69,3 +69,7 @@ spring:
           uri: lb://entities-municipal
           predicates:
             - Path=/municipal-management/**,/unity-management/**
+        - id: users
+          uri: lb://users
+          predicates:
+            - Path=/users/**            
