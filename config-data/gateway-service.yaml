@@ -48,7 +48,7 @@ spring:
         - id: qualification-stages
           uri: lb://qualification-stages
           predicates:
-            - Path=/qualificationStages/**,/prequalifications/**,/firstEvaluation/**,/secondEvaluation/**
+            - Path=/qualificationStages/**,/prequalifications/**,/firstEvaluation/**,/secondEvaluation/**,/report-evaluations/**
         - id: qualifications
           uri: lb://qualifications
           predicates:
