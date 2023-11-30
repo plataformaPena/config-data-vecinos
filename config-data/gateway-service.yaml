@@ -72,4 +72,33 @@ spring:
         - id: users
           uri: lb://users
           predicates:
-            - Path=/users/**            
+            - Path=/users/**   
+        - id: contracts
+          uri: lb://contracts
+          predicates:
+            - Path=/contracts/**,/templates-contracts/**
+        - id: request-recruitment
+          uri: lb://request-recruitment
+          predicates:
+            - Path=/modificationContracts/**,/openPostulations/**,/applicationDefined/**,/renewalContracts/**,/contractRequest/**
+        - id: applicants
+          uri: lb://applicants
+          predicates:
+            - Path=/applicants/**,/applicantions/**
+        - id: budgets
+          uri: lb://budgets
+          predicates:
+            - Path=/budget/**,/vacancy/**
+        - id: contracts-honorary
+          uri: lb://contracts-honorary
+          predicates:
+            - Path=/contractsHonorary/**
+        - id: programs-honorary
+          uri: lb://programs-honorary
+          predicates:
+            - Path=/programsHonorary/**,/functions/**
+        - id: histories-contracting
+          uri: lb://histories-contracting
+          predicates:
+            - Path=/historyContracting/**    
+            
