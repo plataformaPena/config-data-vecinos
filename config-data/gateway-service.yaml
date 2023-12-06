@@ -100,5 +100,9 @@ spring:
         - id: histories-contracting
           uri: lb://histories-contracting
           predicates:
-            - Path=/historyContracting/**    
+            - Path=/historyContracting/**
+        - id: paramether-grales-service
+          uri: lb://paramether-grales-service
+          predicates:
+            - Path=/paramether/bh/**,/paramether/ch/**    
             
