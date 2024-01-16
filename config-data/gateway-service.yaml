@@ -104,5 +104,8 @@ spring:
         - id: paramether-grales-service
           uri: lb://paramether-grales-service
           predicates:
-            - Path=/paramether/bh/**,/paramether/ch/**    
-            
+            - Path=/paramether/bh/**,/paramether/ch/**
+        - id: residents-common-service
+          uri: lb://residents-common-service
+          predicates:
+            - Path=/streets/**,/macro-sectors/**,/genders/**,/marital-status/**,/educational-levels/**,/districts/**,/regions/**,/relations/**,/communes/**
